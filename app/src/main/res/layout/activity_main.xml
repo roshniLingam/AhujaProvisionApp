@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/purple_200">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/menu"
+                android:padding="15dp"
+                android:src="@drawable/ic_menu" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/view_cart"
+                android:padding="15dp"
+                android:src="@drawable/ic_cart" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/ahuja_provision"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+        </RelativeLayout>
+        <!--List-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/teal_200">
+
+            <TextView
+                android:id="@+id/basmati_rice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/basmati_rice"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/Quantity_basmati_rice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/basmati_rice"
+                android:text="@string/quantity"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/quantiy_select_basmati"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="numberDecimal"
+                android:layout_below="@id/basmati_rice"
+                android:layout_toEndOf="@id/Quantity_basmati_rice"
+                android:hint="@string/in_kg"/>
+            <TextView
+                android:id="@+id/price_basmati_rice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Quantity_basmati_rice"
+                android:text="@string/price_rs_225"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button_basmati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:text="@string/add" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/teal_200">
+
+            <TextView
+                android:id="@+id/Sunflower_oil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/sunflower_oil"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/Quantity_sunflower_oil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Sunflower_oil"
+                android:text="@string/quantity"
+                android:textSize="22sp" />
+            <EditText
+                android:id="@+id/quantiy_select_sunflowerOil"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="numberDecimal"
+                android:layout_below="@id/Sunflower_oil"
+                android:layout_toEndOf="@id/Quantity_sunflower_oil"
+                android:hint="@string/in_kg"/>
+            <TextView
+                android:id="@+id/price_sunflowerOil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Quantity_sunflower_oil"
+                android:text="@string/price_rs_225"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button_sunflower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:text="@string/add" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/teal_200">
+
+            <TextView
+                android:id="@+id/biryani_rice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/biryani_rice"
+                android:textSize="25sp" />
+            <EditText
+                android:id="@+id/quantiy_select_biryani"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="numberDecimal"
+                android:layout_below="@id/biryani_rice"
+                android:layout_toEndOf="@id/Quantity_biryani_rice"
+                android:hint="@string/in_kg"/>
+            <TextView
+                android:id="@+id/price_biryani_rice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Quantity_biryani_rice"
+                android:text="@string/price_rs_225"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Quantity_biryani_rice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/biryani_rice"
+                android:text="@string/quantity"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/button_biryani"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:text="Add" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/teal_200">
+
+            <TextView
+                android:id="@+id/ashirvad_wheat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Aashirvad Wheat"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/Quantity_wheat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ashirvad_wheat"
+                android:text="Quantity"
+                android:textSize="22sp" />
+            <EditText
+                android:id="@+id/quantiy_select_wheat"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="numberDecimal"
+                android:layout_below="@id/ashirvad_wheat"
+                android:layout_toEndOf="@id/Quantity_wheat"
+                android:hint="in Kg"/>
+            <TextView
+                android:id="@+id/price_ashirvad_rice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Quantity_wheat"
+                android:text="Price Rs 225"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button_wheat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:text="@string/add" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
